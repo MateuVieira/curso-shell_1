@@ -1,7 +1,7 @@
 #!/bin/bash
 
 converte_imagem(){
-cd ~/workspace/Projetos/curso-shell_1/imagens-livros2
+cd ~/workspace/Projetos/curso-shell_1/imagens-livros
 
 if [ ! -d png ]
 then
