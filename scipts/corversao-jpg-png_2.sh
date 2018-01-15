@@ -1,7 +1,7 @@
 #!/bin/bash
 
 converte_imagem(){
-cd ~/workspace/Projetos/curso-shell_1/imagens-livros
+cd ~/workspace/Projetos/curso-shell_1/imagens-livros2
 
 if [ ! -d png ]
 then
@@ -17,7 +17,7 @@ do
 done
 }
 
-converte_imagem
+converte_imagem 2>erros_conversao.txt
 
 if [ $? -eq 0 ]
 then 
