@@ -2,7 +2,7 @@
 
 cd ~/workspace/Projetos/curso-shell_1/imagens-livros
 
-if { ! -d ong }
+if [ ! -d ong ]
 then
 	mkdir png
 fi
