@@ -14,7 +14,7 @@ processos_memoria(){
 		local nome_processo=$(ps -p $pid -o comm=)
 		echo -n $(date +%F,%H:%M:%S,) >> $nome_processo.log
 		local tamanho_processo=$(ps -p $pid -o size | grep [0-9])
-		echo "$(bc <<< "scale=2;$tamanho_processo/1024") MB" >> $nome_processo.log
+		echo "$(bc <<< "scale=2;$tamanho_processo/1024") MB" >> log/$nome_processo.log
 	done
 }
 
