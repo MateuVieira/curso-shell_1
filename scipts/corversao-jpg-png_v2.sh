@@ -5,8 +5,8 @@
 converte_imagem(){
 	
 	local caminho_imagem=$1
-	local imagem_sem_extemsao =$(ls $caminho_imagem | awk -F. '{ print $1 }')
-	convert $imagem_sem_extensao.jpg $imagem_sem_exensao.png
+	local imagem_sem_extemsao=$(ls $caminho_imagem | awk -F. '{ print $1 }')
+	convert $imagem_sem_extemsao.jpg $imagem_sem_extemsao.png
 }
 varredura(){
 	cd $1
@@ -23,8 +23,7 @@ varredura(){
 	done
 }
 
-varrer_diretorio ~/workspace/Projetos/curso-shell_1/imagens-novos-livros 2>
-
+varredura ~/workspace/Projetos/curso-shell_1/imagens-novos-livros 2>erros_conversao.txt
 if [ $? -eq 0 ]
 then 
 	echo "Conversao realizada com sucesso"
