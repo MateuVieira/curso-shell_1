@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d log]
+if [ ! -d log ]
 then
 	mkdir log
 fi
@@ -20,7 +20,7 @@ processos_memoria(){
 
 processos_memoria
 
-if [ $? -eq 0]
+if [ $? -eq 0 ]
 then
 	echo "Os arquivos foram salvos com sucesso"
 else
