@@ -2,4 +2,7 @@
 
 caminho_imagens = ~/workspace/Projetos/curso-shell_1/imagens-livros
 
-convert $caminho_imagens/*.jpg $caminho_imagens/imagens-livros-png/*.png
+for imagen in $@
+do
+	convert $caminho_imagens/$imagen.jpg $caminho_imagens/$imagen.png
+done
